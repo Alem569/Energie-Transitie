@@ -13,5 +13,12 @@ Route::middleware(['auth', 'verified'])->group(function () {
     })->name('dashboard');
 });
 
+Route::get('/overview/{city?}', function ($city = null) {
+    return Inertia::render('overview', ['city' => $city]);
+})->where('city', '.*')->name('overview');
+
+
+
+
 require __DIR__.'/settings.php';
 require __DIR__.'/auth.php';

@@ -32,25 +32,25 @@ export default function Dashboard() {
                 </div>
                 <div className="grid auto-rows-min gap-10 md:grid-cols-3">
                     <div
-                        onClick={() => console.log('Clicked Amsterdam Noord')}
+                        onClick={() => window.location.href="/overview/amsterdam-noord"}
                         className="cursor-pointer relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border transition-transform duration-300 ease-in-out hover:scale-102"
                     >
                         <Locations locationName="Amsterdam Noord" />
                     </div>
                     <div
-                        onClick={() => console.log('Clicked Waddinxveen')}
+                        onClick={() => window.location.href="/overview/waddinxveen"}
                         className="cursor-pointer relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border transition-transform duration-300 ease-in-out hover:scale-102"
                     >
                         <Locations locationName="Waddinxveen" />
                     </div>
                     <div
-                        onClick={() => console.log('Clicked Rotterdam West')}
+                        onClick={() => window.location.href="/overview/gouda"}
                         className="cursor-pointer relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border transition-transform duration-300 ease-in-out hover:scale-102"
                     >
                         <Locations locationName="Rotterdam West" />
                     </div>
                     <div
-                        onClick={() => console.log('Clicked Gouda')}
+                        onClick={() => window.location.href="/overview/gouda"}
                         className="cursor-pointer relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border transition-transform duration-300 ease-in-out hover:scale-102"
                     >
                         <Locations locationName="Gouda" />
