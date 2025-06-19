@@ -1,7 +1,9 @@
-export function Header(){
-
+export default function Header(){
     return(
-    <h1 className="text-4xl font-bold">Energie transitie</h1>
-)
-}
+    <a href="/dashboard">
+     <h1 className="text-4xl font-extrabold transition-transform duration-300 active:translate-y-1">
+        Energie transitie
+    </h1>
+</a>
 
+)}

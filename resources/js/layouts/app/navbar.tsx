@@ -1,6 +1,7 @@
+// This is the second navbar that isn't being used
 import { ButtonProfile } from '@/components/ui/button-profile';
 import { ButtonSignout } from '@/components/ui/button-signout';
-import { Header } from '@/components/ui/header';
+import Header from '@/components/ui/header';
 
 // Hier moet de users worden geladen zodat het in de navbar kan worden weergegeven
 

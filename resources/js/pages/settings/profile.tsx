@@ -6,7 +6,6 @@ import { FormEventHandler } from 'react';
 import DeleteUser from '@/components/delete-user';
 import HeadingSmall from '@/components/heading-small';
 import InputError from '@/components/input-error';
-import Navbar from '@/layouts/app/navbar';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -46,7 +45,6 @@ export default function Profile({ mustVerifyEmail, status }: { mustVerifyEmail: 
             <Head title="Profile settings" />
 
             <SettingsLayout>
-                <Navbar />
                 <div className="space-y-6 rounded-lg border p-6 shadow-xl">
                     <HeadingSmall title="Profile information" description="Update your name and email address" />
 
