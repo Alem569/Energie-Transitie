@@ -42,6 +42,7 @@ function ButtonProfile({
   const Comp = asChild ? Slot : "button"
 
   return (
+    <a href="/settings/profile">
     <Comp
       data-slot="button"
       className={cn(buttonVariants({ variant, size, className }))}
@@ -49,6 +50,7 @@ function ButtonProfile({
     >
       <img src="/user.svg" />
     </Comp>
+    </a>
   )
 }
 
