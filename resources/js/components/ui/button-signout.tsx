@@ -14,10 +14,10 @@ const buttonVariants = cva(
         destructive:
           "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40",
         outline:
-          "border border-input bg-background shadow-xs hover:bg-orange-400 hover:text-accent-foreground",
+          "border border-input bg-background shadow-xs active:translate-y-1 transition-all duration-100",
         secondary:
           "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-        ghost: "hover:bg-orange-400 hover:text-accent-foreground",
+        ghost: " hohover:bg-orange-400ver:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
@@ -33,6 +33,8 @@ const buttonVariants = cva(
     },
   }
 )
+
+
 
 function ButtonSignout({
   className,
@@ -52,7 +54,7 @@ function ButtonSignout({
           className={cn(buttonVariants({ variant, size, className }))}
           {...props}
         >
-          <img src="/log-out.svg" />
+          <img src="/log-out.svg" alt="log-out" />
         </Comp>
   )
 }

@@ -10,9 +10,9 @@ const buttonVariants = cva(
       variant: {
         default: "btn bg-orange-400 border-none",
         destructive: "bg-destructive text-white shadow-xs hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40",
-        outline: "border border-input bg-background shadow-xs hover:bg-orange-400 hover:text-accent-foreground",
+        outline: "border border-input bg-background shadow-xs active:translate-y-1 transition-all duration-100",
         secondary: "bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-        ghost: "hover:bg-orange-400 hover:text-accent-foreground",
+        ghost: "active:translate-y-1 transition-all duration-100",
         link: "text-primary underline-offset-4 hover:underline",
       },
       size: {
@@ -48,7 +48,7 @@ function ButtonProfile({
       className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     >
-      <img src="/user.svg" />
+      <img src="/user.svg" alt="settings" />
     </Comp>
     </a>
   )

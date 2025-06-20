@@ -120,7 +120,7 @@ export default function Profile({ mustVerifyEmail, status }: { mustVerifyEmail: 
                     </form>
                 </div>
 
-                <div className="space-y-6 rounded-lg border p-6 shadow-xl">
+                {/* <div className="space-y-6 rounded-lg border p-6 shadow-xl">
                     <HeadingSmall title="Rol en permissies" description="Manage userroles and acces" />
 
                     <form onSubmit={submit} className="space-y-6">
@@ -181,7 +181,7 @@ export default function Profile({ mustVerifyEmail, status }: { mustVerifyEmail: 
                             </Transition>
                         </div>
                     </form>
-                </div>
+                </div> */}
 
                 <DeleteUser />
             </SettingsLayout>
