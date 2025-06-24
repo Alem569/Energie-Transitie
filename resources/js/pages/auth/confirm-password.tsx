@@ -23,6 +23,8 @@ export default function ConfirmPassword() {
     };
 
     return (
+        <>
+        <img src="/energy.png" alt="Energy" className="absolute inset-0 z-0 h-full w-full object-cover brightness-90" />
         <AuthLayout
             title="Confirm your password"
             description="This is a secure area of the application. Please confirm your password before continuing."
@@ -56,5 +58,6 @@ export default function ConfirmPassword() {
                 </div>
             </form>
         </AuthLayout>
+        </>
     );
 }
