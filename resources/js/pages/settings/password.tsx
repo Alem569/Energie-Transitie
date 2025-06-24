@@ -53,7 +53,7 @@ export default function Password() {
             <Head title="Password settings" />
 
             <SettingsLayout>
-                <div className="space-y-6">
+                <div className="space-y-6 rounded-lg border p-6 shadow-xl">
                     <HeadingSmall title="Update password" description="Ensure your account is using a long, random password to stay secure" />
 
                     <form onSubmit={updatePassword} className="space-y-6">
