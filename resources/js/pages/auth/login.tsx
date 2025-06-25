@@ -38,10 +38,10 @@ export default function Login({ status, canResetPassword }: LoginProps) {
         <>
             <img src="/energy.png" alt="Energy" className="absolute inset-0 z-0 h-full w-full object-cover brightness-90" />
             <AuthLayout title="Log in to your account" description="Enter your email and password below to log in">
-                <form className="z-1 flex flex-col gap-6" onSubmit={submit}>
+                <form className="z-1 flex flex-col gap-3" onSubmit={submit}>
                     <Head title="Log in" />
 
-                    <div className="grid gap-6">
+                    <div className="grid gap-6  ">
                         <div className="grid gap-2">
                             <Label htmlFor="email">Email address</Label>
                             <Input
@@ -81,7 +81,7 @@ export default function Login({ status, canResetPassword }: LoginProps) {
                         </div>
 
                         <Button type="submit" className="" tabIndex={4} disabled={processing}>
-                            {processing && <LoaderCircle className="h-4 w-4 animate-spin" />}
+                            {processing && <LoaderCircle className="h-6 w-6 animate-spin" />}
                             Log in
                         </Button>
                     </div>

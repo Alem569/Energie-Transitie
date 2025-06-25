@@ -11,7 +11,7 @@ interface AuthLayoutProps {
 export default function AuthSimpleLayout({ children, title, description }: PropsWithChildren<AuthLayoutProps>) {
     return (
         <div className="relative min-h-svh bg-cover bg-center flex items-center justify-center">
-            <div className="bg-white/90 backdrop-blur-md rounded-xl shadow-xl p-8 w-[437px] max-w-full">
+            <div className="bg-white/90 backdrop-blur-md rounded-xl shadow-xl p-6 w-[437px] max-w-full">
                 <div className="flex flex-col items-center gap-4">
                     <Link href={route('home')} className="flex flex-col items-center gap-2 font-medium">
                         <div className="mb-1 flex h-9 w-9 items-center justify-center rounded-md">
