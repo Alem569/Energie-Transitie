@@ -11,13 +11,22 @@ const breadcrumbs: BreadcrumbItem[] = [
     },
 ];
 
-export default function Dashboard({ role }: { role: string }) {
-    console.log('Role prop:', role); // This will log the role value to browser console
+export default function Dashboard({ role, locations }: { role: string, locations: any[] }) {
     return (
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Dashboard" />
             <div className="flex h-full flex-1 flex-col gap-5 rounded-xl p-4 overflow-x-auto">
-            <div className="role-display">Role: {role}</div>
+                <div className="role-display">Role: {role}</div>
+                
+                {/* Display locations */}
+                <div className="locations-container">
+                    <h2>All Locations</h2>
+                    {locations.map((location, index) => (
+                        <p key={index} className="location-item">
+                            {location.name} - User ID: {location.userid}
+                        </p>
+                    ))}
+                </div>
                 <div className="grid auto-rows-min gap-40 md:grid-cols-4">
                     <div className="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
                         <PlaceholderPattern className="absolute inset-0 size-full stroke-neutral-900/20 dark:stroke-neutral-100/20" />

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 use Inertia\Inertia;
 
 Route::get('/', function () {
@@ -10,8 +11,10 @@ Route::get('/', function () {
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', function () {
         $user = auth()->user();
+        $locations = DB::table('locaties')->get();
         return Inertia::render('dashboard', [
             'role' => $user->role,
+            'locations' => $locations
         ]);
     })->name('dashboard');
 });
